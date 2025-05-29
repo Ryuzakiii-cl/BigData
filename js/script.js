@@ -1,34 +1,30 @@
-const images = [
-  "img/image001.webp",
-  "img/image003.webp",
-  "img/image005.webp",
-  "img/image007.webp",
-  "img/image009.webp",
-  "img/image011.webp",
-  "img/image013.webp",
-  "img/image015.webp",
-  "img/image017.webp",
-  "img/image019.webp",
-  "img/image021.webp",
-  "img/image023.webp",
-  "img/image026.webp",
-  "img/image028.webp",
-  "img/image030.webp",
-  "img/image032.webp",
-  "img/image034.webp",
-  "img/image036.webp",
-  "img/image038.webp",
-  "img/image040.webp",
-  "img/image042.webp",
-  "img/image044.webp"
-];
+const galleryImages = document.querySelectorAll('.gallery-image');
+const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+const modalImage = document.getElementById('modalImage');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
 let currentIndex = 0;
 
-function changeImage(direction) {
-  currentIndex += direction;
-  if (currentIndex < 0) currentIndex = images.length - 1;
-  if (currentIndex >= images.length) currentIndex = 0;
-  
-  document.getElementById("modalImage").src = images[currentIndex];
+function showImage(index) {
+  const image = galleryImages[index];
+  modalImage.src = image.src;
+  currentIndex = index;
+  modal.show();
 }
+
+galleryImages.forEach((img, index) => {
+  img.addEventListener('click', () => showImage(index));
+});
+
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    showImage(currentIndex - 1);
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < galleryImages.length - 1) {
+    showImage(currentIndex + 1);
+  }
+});

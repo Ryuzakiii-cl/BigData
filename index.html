@@ -4,282 +4,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/img/bases-de-datos.ico" type="image/x-icon">
   <title>Evidencias Big Data - Avistamientos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="container py-5">
-    <h1 class="mb-4 text-center">🛸 Evidencias Proyecto Big Data</h1>
-    <p class="text-center mb-5 b">Evaluación 2: análisis de avistamientos con BigQuery, Dataprep y Looker Studio</p>
-
-    <section>
-      <h2 class="mb-4">📷 Acceso a Laboratorio</h2>
-      <h2 class="mb-4">📷 Carga de archivo csv a Cloud Storage</h2>
-      <h2 class="mb-4">📷 Creacion de Bucket</h2>
-      <h2 class="mb-4">📷 Creacion Dataset BigQuery</h2>
-      <h2 class="mb-4">📷 Preparacion de archivo con DataPrep</h2>
-      <h2 class="mb-4">📷 Carga de archivo preparado en tabla "Avistamientos" del dataset "ovni"</h2>
-      <h2 class="mb-4">📷 Realizar consultas con Bigquery a la tabla avistamientos</h2>
-      <h2 class="mb-4">📷 Generar graficos con looker studio"</h2>
-      <h2 class="mb-4">📷 Generar graficos con looker studio"</h2>
-      <h2 class="mb-4">📷 Generar graficos con looker studio"</h2>
-      <h2 class="mb-4">📷 Generar graficos con looker studio"</h2>
-
-      <div class="row g-4">
 
 
-        <div class="col-md-4"><img src="img/image001.webp" class="img-fluid rounded shadow" alt="Pantallazo 001"
-            data-bs-toggle="modal" data-bs-target="#modal001"></div>
-        <div class="modal fade" id="modal001" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image001.webp" class="img-fluid w-100"
-                  alt="Pantallazo 001 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image003.webp" class="img-fluid rounded shadow" alt="Pantallazo 003"
-            data-bs-toggle="modal" data-bs-target="#modal003"></div>
-        <div class="modal fade" id="modal003" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image003.webp" class="img-fluid w-100"
-                  alt="Pantallazo 003 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image005.webp" class="img-fluid rounded shadow" alt="Pantallazo 005"
-            data-bs-toggle="modal" data-bs-target="#modal005"></div>
-        <div class="modal fade" id="modal005" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image005.webp" class="img-fluid w-100"
-                  alt="Pantallazo 005 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image007.webp" class="img-fluid rounded shadow" alt="Pantallazo 007"
-            data-bs-toggle="modal" data-bs-target="#modal007"></div>
-        <div class="modal fade" id="modal007" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image007.webp" class="img-fluid w-100"
-                  alt="Pantallazo 007 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image009.webp" class="img-fluid rounded shadow" alt="Pantallazo 009"
-            data-bs-toggle="modal" data-bs-target="#modal009"></div>
-        <div class="modal fade" id="modal009" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image009.webp" class="img-fluid w-100"
-                  alt="Pantallazo 009 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image011.webp" class="img-fluid rounded shadow" alt="Pantallazo 011"
-            data-bs-toggle="modal" data-bs-target="#modal011"></div>
-        <div class="modal fade" id="modal011" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image011.webp" class="img-fluid w-100"
-                  alt="Pantallazo 011 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image013.webp" class="img-fluid rounded shadow" alt="Pantallazo 013"
-            data-bs-toggle="modal" data-bs-target="#modal013"></div>
-        <div class="modal fade" id="modal013" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image013.webp" class="img-fluid w-100"
-                  alt="Pantallazo 013 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-4"><img src="img/image015.webp" class="img-fluid rounded shadow" alt="Pantallazo 015"
-            data-bs-toggle="modal" data-bs-target="#modal015"></div>
-        <div class="modal fade" id="modal015" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image015.webp" class="img-fluid w-100"
-                  alt="Pantallazo 015 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image017.webp" class="img-fluid rounded shadow" alt="Pantallazo 017"
-            data-bs-toggle="modal" data-bs-target="#modal017"></div>
-        <div class="modal fade" id="modal017" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image017.webp" class="img-fluid w-100"
-                  alt="Pantallazo 017 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image019.webp" class="img-fluid rounded shadow" alt="Pantallazo 019"
-            data-bs-toggle="modal" data-bs-target="#modal019"></div>
-        <div class="modal fade" id="modal019" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image019.webp" class="img-fluid w-100"
-                  alt="Pantallazo 019 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image021.webp" class="img-fluid rounded shadow" alt="Pantallazo 021"
-            data-bs-toggle="modal" data-bs-target="#modal021"></div>
-        <div class="modal fade" id="modal021" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image021.webp" class="img-fluid w-100"
-                  alt="Pantallazo 021 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image023.webp" class="img-fluid rounded shadow" alt="Pantallazo 023"
-            data-bs-toggle="modal" data-bs-target="#modal023"></div>
-        <div class="modal fade" id="modal023" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image023.webp" class="img-fluid w-100"
-                  alt="Pantallazo 023 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image026.webp" class="img-fluid rounded shadow" alt="Pantallazo 026"
-            data-bs-toggle="modal" data-bs-target="#modal026"></div>
-        <div class="modal fade" id="modal026" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image026.webp" class="img-fluid w-100"
-                  alt="Pantallazo 026 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image028.webp" class="img-fluid rounded shadow" alt="Pantallazo 028"
-            data-bs-toggle="modal" data-bs-target="#modal028"></div>
-        <div class="modal fade" id="modal028" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image028.webp" class="img-fluid w-100"
-                  alt="Pantallazo 028 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image030.webp" class="img-fluid rounded shadow" alt="Pantallazo 030"
-            data-bs-toggle="modal" data-bs-target="#modal030"></div>
-        <div class="modal fade" id="modal030" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image030.webp" class="img-fluid w-100"
-                  alt="Pantallazo 030 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image032.webp" class="img-fluid rounded shadow" alt="Pantallazo 032"
-            data-bs-toggle="modal" data-bs-target="#modal032"></div>
-        <div class="modal fade" id="modal032" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image032.webp" class="img-fluid w-100"
-                  alt="Pantallazo 032 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image034.webp" class="img-fluid rounded shadow" alt="Pantallazo 034"
-            data-bs-toggle="modal" data-bs-target="#modal034"></div>
-        <div class="modal fade" id="modal034" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image034.webp" class="img-fluid w-100"
-                  alt="Pantallazo 034 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image036.webp" class="img-fluid rounded shadow" alt="Pantallazo 036"
-            data-bs-toggle="modal" data-bs-target="#modal036"></div>
-        <div class="modal fade" id="modal036" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image036.webp" class="img-fluid w-100"
-                  alt="Pantallazo 036 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image038.webp" class="img-fluid rounded shadow" alt="Pantallazo 038"
-            data-bs-toggle="modal" data-bs-target="#modal038"></div>
-        <div class="modal fade" id="modal038" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image038.webp" class="img-fluid w-100"
-                  alt="Pantallazo 038 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image040.webp" class="img-fluid rounded shadow" alt="Pantallazo 040"
-            data-bs-toggle="modal" data-bs-target="#modal040"></div>
-        <div class="modal fade" id="modal040" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image040.webp" class="img-fluid w-100"
-                  alt="Pantallazo 040 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image042.webp" class="img-fluid rounded shadow" alt="Pantallazo 042"
-            data-bs-toggle="modal" data-bs-target="#modal042"></div>
-        <div class="modal fade" id="modal042" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image042.webp" class="img-fluid w-100"
-                  alt="Pantallazo 042 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4"><img src="img/image044.webp" class="img-fluid rounded shadow" alt="Pantallazo 044"
-            data-bs-toggle="modal" data-bs-target="#modal044"></div>
-        <div class="modal fade" id="modal044" tabindex="-1">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0"><img src="img/image044.webp" class="img-fluid w-100"
-                  alt="Pantallazo 044 ampliado"></div>
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
-    </section>
+  <!-- Header decorativo fijo -->
+  <div class="cabeza">
+    <h1 class="mb-2">🛸 Evidencias Proyecto Big Data</h1>
+    <p class="mb-0">Evaluación 2: análisis de avistamientos con BigQuery, Dataprep y Looker Studio</p>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Contenido principal -->
+  <div class="container py-5" style="margin-top: 140px;">
+
+    <section>
+
+      <h3 class="mb-4">📷 Acceso a Laboratorio</h3>
+      <div class="row mb-4 g-3">
+        <div class="col-md-6 mb-3">
+          <img src="img/image001.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 001"
+            data-index="0">
+        </div>
+      </div>
+
+      <h3 class="mb-4">📷 Carga de archivo csv a Cloud Storage</h3>
+      <div class="row mb-4 g-3">
+        <div class="col-md-6 mb-3">
+          <img src="img/image005.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 005"
+            data-index="2">
+        </div>
+      </div>
+
+      <h3 class="mb-4">📷 Creacion de Bucket</h3>
+      <div class="row mb-4 g-3">
+        <div class="col-md-6 mb-3">
+          <img src="img/image003.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 003"
+            data-index="1">
+        </div>
+      </div>
+
+      <h3 class="mb-4">📷 Creacion Dataset BigQuery</h3>
+      <div class="row mb-4 g-3">
+        <div class="col-md-6 mb-3">
+          <img src="img/image007.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 007"
+            data-index="3">
+        </div>
+      </div>
+
+      <h3 class="mb-4">📷 Preparacion de archivo con DataPrep</h3>
+      <h4>Abrir DataPrep</h4>
+      <div class="row mb-4 g-3">
+        <div class="col-md-6 mb-3">
+          <img src="img/image009.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 009"
+            data-index="4">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="img/image011.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 011"
+            data-index="5">
+        </div>
+      </div>
+
+      <h4>Archivos sin limpieza</h4>
+      <div class="row mb-4 g-3">
+        <div class="col-md-4 mb-3">
+          <img src="img/image013.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 013"
+            data-index="6">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/image015.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 015"
+            data-index="7">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/image017.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 017"
+            data-index="8">
+        </div>
+      </div>
+
+      <h4>DataPrep Corregido</h4>
+      <div class="row mb-4 g-3">
+        <div class="col-md-4 mb-3">
+          <img src="img/image019.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 019"
+            data-index="9">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/image021.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 021"
+            data-index="10">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/image023.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 023"
+            data-index="11">
+        </div>
+      </div>
+
+      <h3 class="mb-4">📷 Carga de archivo preparado en tabla "Avistamientos" del dataset "ovni"</h3>
+      <div class="row mb-4 g-3">
+        <div class="col-md-4 mb-3">
+          <img src="img/image026.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 026"
+            data-index="12">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/image028.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 028"
+            data-index="13">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/image030.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 030"
+            data-index="14">
+        </div>
+      </div>
+
+      <h3 class="mb-4">📷 Realizar consultas con BigQuery a la tabla avistamientos</h3>
+      <h4>Data Cargada en BigQuery</h4>
+      <div class="row mb-4 g-3">
+        <div class="col-md-4 mb-3">
+          <img src="img/image032.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 032"
+            data-index="15">
+        </div>
+      </div>
+
+      <h4>Top 5 formas de objetos mas vistos</h4>
+      <div class="row mb-4 g-3">
+        <div class="col-md-4 mb-3">
+          <img src="img/image034.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 034"
+            data-index="16">
+        </div>
+      </div>
+
+      <h4>Cantidad de avistamientos por año</h4>
+      <div class="row mb-4 g-3">
+        <div class="col-md-4 mb-3">
+          <img src="img/image036.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 036"
+            data-index="17">
+        </div>
+      </div>
+
+      <h4>Cantidad de avistamientos por estado en EE.UU.</h4>
+      <div class="row mb-4 g-3">
+        <div class="col-md-4 mb-3">
+          <img src="img/image038.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 038"
+            data-index="18">
+        </div>
+      </div>
+
+      <h3 class="mb-4">📷 Generar graficos con looker studio</h3>
+      <div class="row mb-4 g-3">
+        <div class="col-md-4 mb-3">
+          <img src="img/image040.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 040"
+            data-index="19">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/image042.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 042"
+            data-index="20">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="img/image044.webp" class="img-fluid rounded shadow gallery-image" alt="Pantallazo 044"
+            data-index="21">
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content position-relative">
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+        <div class="modal-body text-center">
+          <img id="modalImage" class="img-fluid rounded" src="" alt="Imagen ampliada">
+        </div>
+        <!-- Botones direccionales -->
+        <button class="btn btn-dark position-absolute top-50 start-0 translate-middle-y" id="prevBtn">&#8592;</button>
+        <button class="btn btn-dark position-absolute top-50 end-0 translate-middle-y" id="nextBtn">&#8594;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <footer class="bg-dark text-center py-4">
+    <div class="container">
+      <img src="img/logoDuoc.png" alt="Logo footer" class="img-fluid">
+
+    </div>
+  </footer>
+
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
