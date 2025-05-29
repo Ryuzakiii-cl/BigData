@@ -1,0 +1,50 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.img-fluid {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content {
+  background-color: #fff;
+
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+}
+
