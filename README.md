@@ -54,6 +54,10 @@ ORDER BY
   Sightings DESC
 LIMIT 5;
 ```
+<img src="img/image040.webp" alt="Grafico de Torta" width="500">
+
+
+
 
 ## 📈 Avistamientos por Año
 
@@ -70,6 +74,9 @@ GROUP BY
 ORDER BY 
   Sightings DESC;
 ```
+<img src="img/image042.webp" alt="Grafico de Barra" width="500">
+
+
 
 ## 🗺️ Avistamientos por Estado en EE.UU.
 
@@ -87,6 +94,7 @@ ORDER BY
   Sightings DESC;
   
 ```
+<img src="img/image044.webp" alt="Grafico de poblacion" width="500">
 
 ## 🏁 Conclusión
 
